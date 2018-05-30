@@ -1,0 +1,83 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+\moderncvtheme[blue]{classic} 
+\usepackage[utf8]{inputenc}  %Windows 
+
+%\usepackage[scale=0.975]{geometry}
+\usepackage[top=0.5cm, bottom=0.5cm, left=0.5cm, right=0.5cm]{geometry}
+\usepackage{graphicx}
+
+\firstname{Zhenya}
+\familyname{ZHANG}
+\title{National Institute of Informatics\\\vspace{2mm} PhD Candidate}         
+\address{ERATO Hasuo Project, Palace Side Building 3F,\\
+Hitotsubashi 1-1-1, Tokyo 100-0003\\}  
+\mobile{(+81) 080-9536-8208}    
+%\phone{}                
+%\fax{Votre Fax}                      
+\email{zhangzy@nii.ac.jp}                              
+\extrainfo{}
+\photo[70pt]{photo.jpg} 
+%\quote{Objectif: Intégrer une équipe au sein d'un projet novateur en tant que développeur informatique.}         
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
+
+\usepackage{multibib}
+\newcites{book,misc}{{Books},{Others}}
+
+\nopagenumbers{}                         
+\begin{document}
+
+\maketitle
+\vspace{-10mm}
+\section{Education}
+\cventry{2017--now, PhD student}{National Institute of Informatics, The Graduate University for Advanced Studies}{Tokyo}{}{}{Department of Informatics\quad Supervisor: Associate Professor. Ichiro Hasuo}
+\cventry{2014--2017, Master}{Institute of Software, Chinese Academy of Sciences}{Beijing}{}{}{State Key Laboratory of Computer Science. \quad Supervisor: Associate Professor. Yu Zhang}
+\cventry{2010--2014, Bachelor}{Northwestern Polytechnical University}{Xi'an}{}{}{School of Software and Microelectronics. \quad Major: Software engineering}
+
+\section{Research Interest}
+ \quad  $\bullet$ Formal methods \quad  $\bullet$ Software engineering\quad  $\bullet$ Concurrency \quad $\bullet$ Cyber-physical systems
+ 
+ \section{Language \& Skill}
+\cvline{Languages}{$\bullet$ Chinese (Mother language) \quad $\bullet$ English (TOFEL 98) \quad $\bullet$ Japanese (JLPT N1)}
+\cvline{Programming}{$\bullet$ C++, C, Java, Matlab, Python, Haskell, Shellscript, etc.}
+\cvline{Tools}{$\bullet$ Breach, S-Taliro, Java PathFinder, Coq, NuSMV, Spin, etc.}
+
+\section{Publications}
+\cventry{2018}{Gidon Ernst, Ichiro Hasuo, Sean Sedwards, Zhenya Zhang}{}{}{}{Time-staging Enhancement of Hybrid System Falsification, Preprint}
+\cventry{2017}{Zhenya Zhang, Peng Wu, Yu Zhang}{}{}{}{Localization of Linearizability Faults on the Coarse-grained Level. International Journal of Software Engineering and Knowledge Engineering (Special Issue)}
+\cventry{2017}{Zhenya Zhang, Peng Wu, Yu Zhang}{}{}{}{Localization of Linearizability Faults on the Coarse-grained Level. 29th International Conferences of Software Engineering and Knowledge Engineering}
+\cventry{2017}{Yang Chen, Zhenya Zhang, Peng Wu, Yu Zhang}{}{}{}{Automatic Localization of Linearizability Faults, Preprint}
+
+
+\section{Visit}
+\cventry{2018}{2nd ARVI COST School on Runtime Verification}{}{Praz-sur-Arly, France}{}{}
+\cventry{2017}{38th IEEE Real-Time Systems Symposium}{}{Paris, France}{}{}
+\cventry{2017}{\small 29th International Conference of Software Engineering and Knowledge Engineering}{}{\small Pittsburgh, USA}{}{}
+\cventry{2016}{Royal Holloway University of London}{}{Egham, UK}{}{}
+
+
+
+
+ % \cventry{2018}{}{PMSIpilot}{Lyon}{}{Stage encadré par l'IUT de Montpellier. Réalisation d'applications de gestion.}
+
+
+\section{Awards}
+\cventry{2017}{MEXT Honors Scholarship}{}{}{}{}
+\cventry{2017}{NII Scholarship, National Institute of Informatics}{}{}{}{}
+\cventry{2014}{Excellent Graduate, Northwestern Polytechnical University}{}{}{}{}
+\cventry{2012}{National Scholarship, China}{}{}{}{}
+\cventry{2011}{National Scholarship, China}{}{}{}{}
+
+
+
+\section{Employment}
+\cvline{2017--now}{Research Assistant, National Institute of Informatics}
+\cvline{2014--2017}{Research Assistant, Institute of Software, Chinese Academy of Sciences}
+
+
+
+
+\end{document}
+
