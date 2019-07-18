@@ -6,19 +6,21 @@
 %\usepackage[scale=0.975]{geometry}
 \usepackage[top=0.5cm, bottom=0.5cm, left=0.5cm, right=0.5cm]{geometry}
 \usepackage{graphicx}
+\usepackage{color}
 
 \firstname{Zhenya}
 \familyname{ZHANG}
-\title{National Institute of Informatics\\\vspace{2mm} PhD Candidate}         
-\address{ERATO Hasuo Project, Palace Side Building 3F,\\
-Hitotsubashi 1-1-1, Tokyo 100-0003\\}  
-\mobile{(+81) 080-9536-8208}    
+\title{\small{PhD Candidate \& Research Assistant at \newline National Institute of Informatics\newline The Graduate University for Advanced Studies (SOKENDAI) \newline\newline JSPS Research Fellow}}        
+\address{ERATOMMSD Project\\309 Palace Side Building,\\
+Hitotsubashi 1-1-1, Tokyo 100-0003, Japan\\}  
+\phone{(+81) 3-6273-4886} 
+
 %\phone{}                
 %\fax{Votre Fax}                      
 \email{zhangzy@nii.ac.jp}                              
-\extrainfo{}
-\photo[70pt]{photo.jpg} 
-%\quote{Objectif: Intégrer une équipe au sein d'un projet novateur en tant que développeur informatique.}         
+\extrainfo{http://group-mmm.org/\textasciitilde zhenya/}   
+\photo[80pt]{photo.jpg} 
+%\quote{Objectif: Int\UTF{00E9}grer une \UTF{00E9}quipe au sein d'un projet novateur en tant que d\UTF{00E9}veloppeur informatique.}         
 \makeatletter
 \renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 \makeatother
@@ -32,49 +34,115 @@ Hitotsubashi 1-1-1, Tokyo 100-0003\\}
 \maketitle
 \vspace{-10mm}
 \section{Education}
-\cventry{2017--now, PhD student}{National Institute of Informatics, The Graduate University for Advanced Studies}{Tokyo}{}{}{Department of Informatics\quad Supervisor: Associate Professor. Ichiro Hasuo}
-\cventry{2014--2017, Master}{Institute of Software, Chinese Academy of Sciences}{Beijing}{}{}{State Key Laboratory of Computer Science. \quad Supervisor: Associate Professor. Yu Zhang}
-\cventry{2010--2014, Bachelor}{Northwestern Polytechnical University}{Xi'an}{}{}{School of Software and Microelectronics. \quad Major: Software engineering}
+\cventry{\small{Oct. 2017\textasciitilde \\now}}{National Institute of Informatics \newline The Graduate University for Advanced Studies (SOKENDAI), Tokyo, Japan}{}{}{}{\emph{PhD in Computer Science}\\ERATO Metamathematics for Systems Design Project (ERATO MMSD Project)\\Supervisor: Associate Professor. Ichiro Hasuo (https://group-mmm.org/\textasciitilde ichiro/)\\Co-Supervisor: Associate Professor. Paolo Arcaini (https://group-mmm.org/\textasciitilde arcaini)\\Co-Supervisor: Dr. Gidon Ernst (https://www.sosy-lab.org/people/ernst/)
+%Research focus: Software testing techniques on hybrid systems which integrate continuous and discrete dynamics. As traditional software techniques only deal with discrete dynamics, how to mitigate the effect of continuous dynamics in hybrid systems is the main challenge. We apply some stochastic optimization techniques to smartly test the systems and find bugs.\\
+}
+
+\cventry{Sep. 2014\textasciitilde\\ Jul. 2017}{Institute of Software Chinese Academy of Sciences \newline University of Chinese Academy of Sciences, Beijing, China}{}{}{}{\emph{MSc in Computer Science} \\State Key Laboratory of Computer Science\\Supervisor: Associate Professor. Yu Zhang (http://lcs.ios.ac.cn/\textasciitilde yzhang/\\ Co-Supervisor: Associate Professor Peng Wu (http://lcs.ios.ac.cn/\textasciitilde wp/))
+%\\Research focus: software testing techniques on concurrent programs. Different from general programs, concurrent programs have more than 1 threads/processors read or write the shared memories, so different threads can conflict when they read/write the shared memories simultaneously and affect the correctness of the program. Our research is to define the correctness criteria of concurrent programs and test whether programs satisfy them.\\
+}
+
+\cventry{Sep. 2010\textasciitilde\\ Jul. 2014}{Northwestern Polytechnical University, Xi'an, China}{}{}{}{\emph{BSc in Software Engineering}\\School of Software}
+%\cventry{}{Shanghe No.1 High School}{09-01-2007\textasciitilde 06-01-2010}{213 Minghui Road, Shanghe County, Jinan, Shandong Province}{}{Program: general high school program\\Participate the College Entrance Examination in 2010.\\}
 
 \section{Research Interest}
- \quad  $\bullet$ Formal methods \quad  $\bullet$ Software engineering\quad  $\bullet$ Concurrency \quad $\bullet$ Cyber-physical systems
+My research interest lies at the intersection of formal methods and software testing. My current research topic is hybrid system falsification, which aims to find a counterexample to refute the specifications of a black-box system. System requirements here are in the form of rigorous mathematics, namely, temporal logics, while methodology depends on stochastic optimization as well as artificial intelligence techniques. Prior to joining ERATOMMSD Project, my research topic is on testing concurrent data structures against correctness criterion like linearizability.
  
- \section{Language \& Skill}
-\cvline{Languages}{$\bullet$ Chinese (Mother language) \quad $\bullet$ English (TOFEL 98) \quad $\bullet$ Japanese (JLPT N1)}
-\cvline{Programming}{$\bullet$ C++, C, Java, Matlab, Python, Haskell, Shellscript, etc.}
-\cvline{Tools}{$\bullet$ Breach, S-Taliro, Java PathFinder, Coq, NuSMV, Spin, etc.}
+ %\section{Language \& Skill}
+%\cvline{Languages}{$\bullet$ Chinese (Mother language) \quad $\bullet$ English (TOFEL 98) \quad $\bullet$ Japanese (JLPT N1)}
+%\cvline{Programming}{$\bullet$ C++, C, Java, Matlab, Python, Haskell, Shellscript, etc.}
+%\cvline{Tools}{$\bullet$ Breach, S-TaliroJava PathFinder, Coq, NuSMV, Spin, etc.}
 
 \section{Publications}
-\cventry{2018}{Gidon Ernst, Ichiro Hasuo, Sean Sedwards, Zhenya Zhang}{}{}{}{Time-staging Enhancement of Hybrid System Falsification, Preprint}
-\cventry{2017}{Zhenya Zhang, Peng Wu, Yu Zhang}{}{}{}{Localization of Linearizability Faults on the Coarse-grained Level. International Journal of Software Engineering and Knowledge Engineering (Special Issue)}
-\cventry{2017}{Zhenya Zhang, Peng Wu, Yu Zhang}{}{}{}{Localization of Linearizability Faults on the Coarse-grained Level. 29th International Conferences of Software Engineering and Knowledge Engineering}
-\cventry{2017}{Yang Chen, Zhenya Zhang, Peng Wu, Yu Zhang}{}{}{}{Automatic Localization of Linearizability Faults, Preprint}
+\quad\quad\quad \large{\textbf{\textcolor{blue}{Journal Papers}}}\\
+
+\cventry{2018}{Zhenya Zhang, Gidon Ernst, Sean Sedwards, Paolo Arcaini, Ichiro Hasuo. (2018). Two-layered falsification of hybrid systems guided by monte carlo tree search. }{IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, 37(11), 2894-2905.}{Special issue for the International Conference on Embedded Software (\emph{EMSOFT}) 2018}{}{}
+
+\cventry{2017}{Zhenya Zhang, Peng Wu, Yu Zhang. Localization of Linearizability Faults on the Coarse-grained Level}{International Journal of Software Engineering and Knowledge Engineering  International Journal of Software Engineering and Knowledge Engineering, 27(09n10), 1483-1505.}{Special issue for \emph{SEKE2017}}{}{}
+\vspace{+0.5em}
+\quad\quad\quad \large{\textbf{\textcolor{blue}{International Conference Papers}}}\\
+
+\cventry{2019}{Gidon Ernst, Sean Sedwards, Zhenya Zhang, Ichiro Hasuo. Fast Falsification of Hybrid Systems using Probabilistically Adaptive Input.}{16th International Conference on Quantitative Evaluation of SysTems (QEST 2019) 2019.}{}{}{}
+
+\cventry{2019}{Zhenya Zhang, Ichiro Hasuo, Paolo Arcaini. Multi-Armed Bandits for Boolean Connectives in Hybrid System Falsification.}{In International Conference on Computer Aided Verification (CAV) 2019 (pp. 401-420). Springer, Cham.}{}{}{}
+
+\cventry{2018}{Yang Chen, Zhenya Zhang, Peng Wu, Yu Zhang. Interleaving Tree Based Fine-grained Linearizability Fault Localization.}{In International Symposium on Dependable Software Engineering: Theories, Tools, and Applications (SETTA) 2018 (pp. 108-126). Springer, Cham.}{}{}{}
 
 
-\section{Visit}
-\cventry{2018}{2nd ARVI COST School on Runtime Verification}{}{Praz-sur-Arly, France}{}{}
-\cventry{2017}{38th IEEE Real-Time Systems Symposium}{}{Paris, France}{}{}
-\cventry{2017}{\small 29th International Conference of Software Engineering and Knowledge Engineering}{}{\small Pittsburgh, USA}{}{}
-\cventry{2016}{Royal Holloway University of London}{}{Egham, UK}{}{}
+%\cventry{2018}{Gidon Ernst, Ichiro Hasuo, Sean Sedwards, Zhenya Zhang}{}{}{}{Time-staging Enhancement of Hybrid System Falsification, Preprint}
+
+
+\cventry{2017}{Zhenya Zhang, Peng Wu, Yu Zhang. Localization of Linearizability Faults on the Coarse-grained Level}{The 29th International Conference on Software Engineering and Knowledge Engineering (SEKE) 2017  (pp. 272-277), Wyndham Pittsburgh University Center, Pittsburgh, PA, USA, July 5-7, 2017.}{}{}{}
+
+
+\vspace{+0.5em}
+\quad\quad\quad \large{\textbf{\textcolor{blue}{Workshop Papers, Report, Abstracts}}}\\
+
+\cventry{2019}{Zhenya Zhang, Gidon Ernst, Sean Sedwards, Paolo Arcaini, Ichiro Hasuo. Hybrid System Falsification Using Monte Carlo Tree Search}{4th Workshop on Monitoring and Testing of Cyber-Physical Systems, MT-CPS 2019.}{}{}{}
+
+\cventry{2019}{Gidon Ernst, Paolo Arcaini, Alexandre Donze, Georgios Fainekos, Logan Mathesen, Giulia Pedrielli, Shakiba Yaghoubi, Yoriyuki Yamagata and Zhenya Zhang. ARCH-COMP 2019 Category Report: Falsification}{Applied Verification of Continuous and Hybrid Systems (ARCH)2019. EPiC Series in Computing 61, 129-140}{}{}{}
+
+\cventry{2018}{Adel Dokhanchi, Shakiba Yaghoubi, Bardh Hoxha, Georgios Fainekos, Gidon Ernst, Zhenya Zhang, Paolo Arcaini, Ichiro Hasuo, Sean Sedwards. ARCH-COMP18 Category Report: Results on the Falsification Benchmarks}{Applied Verification of Continuous and Hybrid Systems (ARCH) 2018. ARCH@ ADHS, 104-109}{}{}{}
+
+\cventry{2018}{Zhenya Zhang, Gidon Ernst, Ichiro Hasuo, Sean Sedwards. Time-Staging Enhancement of Hybrid System Falsification (Abstract)}{ In 2018 IEEE Workshop on Monitoring and Testing of Cyber-Physical Systems (MT-CPS) (pp. 3-4). IEEE.}{}{}{}
+
+\cventry{2018}{Gidon Ernst, Ichiro Hasuo, Zhenya Zhang and Sean Sedwards. Time-Staging Enhancement of Hybrid System Falsification.}{The 4th International Workshop on Symbolic and Numerical Methods for Reachability Analysis (SNR), affiliated with ETAPS 2018.}{}{}{}
+
+\vspace{+0.5em}
+\quad\quad\quad \large{\textbf{\textcolor{blue}{Theses}}}\\
+
+\cventry{2017}{Zhenya Zhang. Automatic Localization of Linearizability Faults in Concurrent Data Structures.}{Master's thesis, University of Chinese Academy of Sciences, 2017.}{}{}{}
+
+
+\section{Talks}
+\cventry{Jul. 2019}{Multi-Armed Bandits for Boolean Connectives in Hybrid System Falsification}{\newline 31st International Conference on Computer-Aided Verification (CAV), New York City, USA}{}{}{}
+\cventry{Apr. 2019}{Hybrid System Falsification Using Monte Carlo Tree Search}{\newline 4th Workshop on Monitoring and Testing of Cyber-Physical Systems (MT-CPS), Montreal, Canada.}{}{}{}
+\cventry{Oct. 2018}{Two-Layered Falsification of Hybrid Systems Guided by Monte Carlo Tree Search}{\newline International Conference on Embedded Software (EMSOFT), Turin, Italy.}{}{}{}
+\cventry{Sep. 2018}{Interleaving Tree Based Fine-grained Linearizability Fault Localization}{Symposium on Dependable Software Engineering, Theories, Tools and Applications (SETTA 2018) (Part of CONFESTA), Beijing, China.}{}{}{}
+\cventry{Apr. 2018}{Time-Staging Enhancement of Hybrid System Falsification}{3rd Workshop on Monitoring and Testing of Cyber-Physical Systems, MT@CPSWeek, Porto, Portugal.}{}{}{}
+\cventry{Jul. 2017}{Localization of Linearizability Faults on the Coarse-Grained Level. }{The 29th International Conference on Software Engineering and Knowledge Engineering (SEKE 2017), Pittsburgh, USA}{}{}{}
+
+
+\section{Research visits}
+\cventry{Sep. 2019- Dec. 2019}{Intern student at University of Waterloo, Waterloo, ON, Canada}{\newline Hosted by Professor Krzysztof Czarnecki (https://gsd.uwaterloo.ca/kczarnec)\newline and Assistant Professor Sean Sedwards}{}{}{}
+\cventry{Jul. 2019}{31st International Conference on Computer-Aided Verification (CAV), New York City, USA}{}{}{}{}
+\cventry{Apr. 2019}{Cyber-Physical Systems and Internet-of-Things Week (CPS-IoT Week 2019), Montreal, Canada}{}{}{}{}
+\cventry{Oct. 2018}{Embedded Systems Week (ESWEEK 2018), Turin, Italy.}{}{}{}{}
+\cventry{Sep. 2018}{International Conferences CONCUR, FORMATS, QEST, and SETTA (CONFESTA 2018), Beijing, China}{}{}{}{}
+\cventry{Jul. 2018}{Federated Logic Conference (FLOC 2018), Oxford, UK}{}{}{}{}
+\cventry{Apr. 2018}{Cyber-Physical Systems Week (CPS Week 2018), Porto, Portugal}{}{}{}{}
+\cventry{Mar. 2018}{2nd ARVI COST School on Runtime Verification, Praz-sur-Arly, France}{}{}{}{}
+\cventry{Dec. 2017}{IEEE Real-Time Systems Symposium (RTSS 2017), Paris, France}{}{}{}{}
+\cventry{Jul. 2017}{The 29th International Conference on Software Engineering and Knowledge Engineering (SEKE 2017), Pittsburgh, USA}{}{}{}{}
+\cventry{Oct. 2016- Nov. 2017}{Intern student at Royal Holloway University of London, Egham, UK}{\newline Hosted by Professor Zhaohui Luo (https://www.cs.rhul.ac.uk/home/zhaohui/)}{}{}{}
 
 
 
 
- % \cventry{2018}{}{PMSIpilot}{Lyon}{}{Stage encadré par l'IUT de Montpellier. Réalisation d'applications de gestion.}
+ % \cventry{2018}{}{PMSIpilot}{Lyon}{}{Stage encadr\UTF{00E9} par l'IUT de Montpellier. R\UTF{00E9}alisation d'applications de gestion.}
+ 
+ \section{Professional Activities}
+\cventry{2019}{EMSOFT 2019, WiP Committee Member}{}{}{}{}
+\cventry{2019}{EMSOFT 2019, Secondary Reviewer}{}{}{}{}
+\cventry{2018}{EMSOFT 2018, Secondary Reviewer}{}{}{}{}
 
 
-\section{Awards}
+
+\section{Awards \& Grants}
+\cventry{2019}{JSPS DC2}{Japan Society for the Promotion of Science, Research Fellowships for Young Scientists}{}{}{}
+\cventry{2018}{"Best Paper Award" nominee}{International Conference on Embedded Software (EMSOFT 2018), Turin, Italy.}{}{}{}
 \cventry{2017}{MEXT Honors Scholarship}{}{}{}{}
-\cventry{2017}{NII Scholarship, National Institute of Informatics}{}{}{}{}
-\cventry{2014}{Excellent Graduate, Northwestern Polytechnical University}{}{}{}{}
+\cventry{2017}{NII Scholarship}{National Institute of Informatics}{}{}{}
+%\cventry{2014}{Graduate with honor, Northwestern Polytechnical University}{}{}{}{}
 \cventry{2012}{National Scholarship, China}{}{}{}{}
 \cventry{2011}{National Scholarship, China}{}{}{}{}
 
 
 
 \section{Employment}
-\cvline{2017--now}{Research Assistant, National Institute of Informatics}
-\cvline{2014--2017}{Research Assistant, Institute of Software, Chinese Academy of Sciences}
+\cvline{Apr. 2019- Apr. 2021}{JSPS Research Fellow, Japan}
+\cvline{Oct. 2017- Oct. 2020}{Research Assistant, National Institute of Informatics, Tokyo, Japan}
+\cvline{Sep. 2014- Sep. 2017}{Research Assistant, Institute of Software Chinese Academy of Sciences, Beijing, China}
 
 
 
